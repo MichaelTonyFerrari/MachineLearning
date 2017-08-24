@@ -1,0 +1,22 @@
+content based recommonder: 
+attribute based 
+pros: 
+	- works with no user reviews 
+
+
+cons: 
+	- need descriptive data for all products 
+	- difficult for large databases, due to time consumption setting up and consistenty on thoughts of movies 
+		- one might think its scary as one might not 
+
+
+Collaborting filtering: 
+user based 
+- makes recommondenation only on how user rated in past, not the product itself 
+
+pros: 
+	- doesnt require knowledge of products themselves 
+cons: 
+	- needs reviews to give recommondations 
+	- difficult to recommend for new users
+	- favors popular products over new products 

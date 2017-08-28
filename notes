@@ -20,3 +20,72 @@ cons:
 	- needs reviews to give recommondations 
 	- difficult to recommend for new users
 	- favors popular products over new products 
+
+
+
+____________
+Optimizing for loop multiplication by using numpy array function
+	- loads everything into memory to allow for parrallel work 
+
+____________
+Score movies 
+
+Movie 1: attack on earth
+action: 5
+drame: -2
+romance: 0
+arthouse: -5
+crowd-pleaser: 4 
+
+Movie 2: my complciated family 
+action: -5
+drame: 5
+romance: 1
+arthouse: 4
+crowd-pleaser: -5
+
+
+Then use personality quiz on user 
+you like explosions? = 5 in action 
+
+User rating 1: 
+
+action: 5
+drame: -2
+romance: 1
+arthouse: -5
+crowd-pleaser: 5
+
+user * movie ratings = score 
+Movie 1 
+
+5	*	5	= 25
+-2	*	-2	= 4
+0	*	1	= 0
+-5	*	-5	= 25
+4	* 	5 	= 20 
+
+Score = 74 
+
+Movie 2
+
+5	*	-5	= -25
+-2	*	5	= -10
+1	*	1	= 1
+-5	*	4	= -20
+5	* 	-5 	= -25  
+
+Score = -79
+
+U = [5 -2 1 -5 5]
+
+M = [5 -5]
+	[-2 5]
+	[0  1]
+	[-5 4] 
+	[4 -5] 
+= [74 -79]
+
+- Now we can predict how much a user will like a movie if we have appeal/interest ratings for every user and movie 
+- Con: 
+	Assigning appeal/interest ratings by hand isnt practical 
